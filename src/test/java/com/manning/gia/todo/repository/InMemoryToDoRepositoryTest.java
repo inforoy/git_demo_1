@@ -107,7 +107,7 @@ public class InMemoryToDoRepositoryTest {
         inMemoryToDoRepository.insert(toDoItem);
         List<ToDoItem> toDoItems = inMemoryToDoRepository.findAll();
 
-        assertEquals(1, toDoItems.size());
+        assertEquals(1000, toDoItems.size());
         assertEquals(toDoItem, toDoItems.get(0));
         toDoItem.setName("Updating an item");
         inMemoryToDoRepository.update(toDoItem);
