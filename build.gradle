@@ -1,15 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'war'
 apply plugin: 'jetty'
+apply plugin: 'jacoco'
 
 repositories {
-    maven{ 
-    	url 'http://localhost:8081/artifactory/libs-release'
-    	credentials {
-                username "admin"
-                password "password"
-            }
-    }
+        mavenCentral()
 }
 
 dependencies {
